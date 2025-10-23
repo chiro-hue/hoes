@@ -1,0 +1,342 @@
+:root{
+    --background: #B77466;
+    --accent: #FFE1AF;
+    --secondary: #E2B59A;
+    --primary: #957C62;
+    --white: #fff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 64px;
+}
+h2{
+    font-size: 32px;
+}
+.container-lg{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0px auto;
+}
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    background: linear-gradient(145deg, var(--primary) , var(--accent));
+    min-height: 100vh;
+    color: var(--white);
+}
+.nav-wrapper{
+    padding: 10px 20px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    height: 100px;
+   
+}
+.navigation{
+    padding: 0px 30px;
+    margin-top: 20px;
+     position: fixed;
+     width: 100%;
+    z-index: 10;
+}
+.navlink{
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 500;
+}
+.navlink-wrapper{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+section{
+    padding: 80px 30px;
+}
+.hero-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  
+    
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.social-icon{
+    color: var(--white);
+    font-size: 32px;
+    text-decoration: none;
+}
+.btn{
+    padding: 8px 12px;
+    background-color: var(--white);
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: 8px;
+}
+.about-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 30px;
+    gap: 40px;
+    text-align: center;
+}
+.about-wrapper.is-card{
+    background: linear-gradient(145deg, var(--secondary), var(--background));
+    border-radius: 20px;
+    box-shadow: 10px 11px 25px 4px var(--primary);
+}
+.skill-card, .project-card{
+    background: linear-gradient(145deg, var(--secondary), var(--background));
+    border-radius: 20px;
+    box-shadow: 10px 11px 25px 4px var(--primary);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.container-lg > h2{
+    text-align: center;
+}
+.skill-wrapper, .project-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    gap: 40px;
+    padding: 40px;
+    
+}
+.testimonial-card{
+    background: linear-gradient(145deg, var(--secondary), var(--background));
+    border-radius: 20px;
+    box-shadow: 10px 11px 25px 4px var(--primary);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex-shrink: 0;
+    max-width: 450px;
+}
+.testimonial-track, .testimonial-track-2{
+    display: flex;
+    gap: 30px;
+}
+.testimonial-wrapper{
+    overflow: hidden;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.testimonial-track{
+    animation: marquee-left 15s linear infinite;
+}
+.testimonial-track-2{
+    animation: marquee-right 15s linear infinite;
+}
+.cta-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 30px;
+    gap: 40px;
+    text-align: center;
+}
+.cta-wrapper.is-card{
+    background: linear-gradient(145deg, var(--secondary), var(--background));
+    border-radius: 20px;
+    box-shadow: 10px 11px 25px 4px var(--primary);
+}
+.footer-wrapper{
+    text-align: center;
+}
+.footer-section{
+    padding: 20px;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #B77466;
+    text-align: center;
+   
+
+}
+@keyframes marquee-left{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+@keyframes marquee-right{
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.centerized {
+   display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.centerizeds{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.container-contact {
+    background-color: #B77466;
+    border-radius: 30px;
+    padding: 20px;
+    width: 1300px;
+
+}
+
+@media (max-width: 768px) {
+
+ 
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+
+  .nav-wrapper {
+    flex-direction: row;
+    height: auto;
+    padding: 15px;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    
+
+  }
+
+  .navlink-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+ 
+  .hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero-image-block img {
+    width: 80%;
+    height: auto;
+  }
+
+ 
+  .about-wrapper {
+    padding: 30px 15px;
+  }
+
+
+  .skill-wrapper,
+  .project-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .skill-card,
+  .project-card {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+
+
+  .testimonial-wrapper {
+    padding: 20px;
+    overflow-x: scroll;
+  }
+
+  .testimonial-card {
+    min-width: 280px;
+  }
+
+ 
+  .container-contact {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .hero-wrapper-contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-contact,
+  .right-contact {
+    width: 100%;
+  }
+
+  .input input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.cnt{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #E2B59A;
+    text-decoration: none;
+}
+.llinks{
+    text-decoration: none;
+}
